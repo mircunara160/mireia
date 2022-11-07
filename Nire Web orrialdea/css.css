@@ -1,0 +1,466 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+body.egipt{
+    background-color: rgba(236, 236, 198, 0.849);
+}
+
+body.nor{
+    background-color: rgba(128, 145, 150, 0.788);
+}
+
+body.gre{
+    background-color: rgba(128, 145, 150, 0.788);
+}
+
+body.web{
+    background-color: azure;
+}
+
+body{
+    font-size: 20px;
+    align-items: center;
+    justify-content:center;
+    background-color: grey;
+}
+header{
+    height: 100px;
+    background-color: black;
+}
+
+header a img{
+    margin-right: 50px;
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+.titulo {
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo a{
+    color: white;
+    text-decoration: none;
+}
+
+.titulo a:hover{
+    color: rgb(7, 109, 109);
+    text-decoration: none;
+}
+
+nav ul{
+    background-color: rgb(167, 74, 12);
+    opacity: 0.9;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    color: white;
+    height: 50px;
+    display: inline-flex;
+}
+
+nav a{
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+nav li:hover{
+    background-color: lightcoral;
+}
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.slider ul{
+    display: flex;
+    width: 400%;
+    background-color: black;
+    height: auto;
+
+    animation: slider 15s infinite alternate;
+    animation-timing-function:step-start;
+    
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider li img.irudia{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes slider {
+    5%{ margin-left: 0;}
+    15%{ margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    55%{margin-left: -200%;}
+    75%{margin-left: -200%;}
+
+    85%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+.container{
+    background-image: url(R.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.container2{
+    background-image: url(egipt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+.container3{
+    background-image: url(grecia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.container4{
+    background-image: url(nor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.section2 {
+    background-color: rgb(206, 207, 191);
+}
+
+.section {
+    background-color: rgb(197, 216, 216);
+}
+
+.fot{
+    width: 100%;
+    height: 190px;
+    border-radius: 0px 50px 0px 50px;
+    object-fit: cover;  
+}
+
+.sub{
+    margin-left: 15px;
+}
+p#texto{
+    text-align: justify;
+    margin: 15px;
+}
+
+p#texto2{
+    text-align: justify;
+    margin: 15px;
+}
+
+p#texto3{
+    text-align: justify;
+    margin: 15px;
+}
+
+
+div.container3 ul li{
+    list-style-type: numbers;
+    margin: 25px;
+}
+
+div.container3 ul li b{
+    color:blue;
+}
+
+div.container ul.jatorria li{
+    list-style-type:circle ;
+    margin-left: 25px;
+}
+
+div.container2 ul li{
+    text-align: justify;
+    list-style-type:circle ;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+
+
+.titulosub{
+    text-decoration: underline blue;
+    color: black;
+    font-size: 35px;
+}
+.carta{
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+
+.card{
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin: 20px;
+    position: relative;
+    width: 150px;
+    height: 250px;
+    padding-left: 5%;
+    padding-right: 9%;
+}
+
+
+.card .face{
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background: rgba(0, 0, 0, 0.644);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgba(75, 75, 202, 0.87);
+    padding: 15px;
+    color: white;
+    text-align: center;
+
+}
+
+.card .back h3{
+    font-size: 30px;
+    margin-top: 5px;
+
+}
+
+.card .back p{
+    font-size: 15px;
+    margin-top: 5px;
+
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+.footer-distributed{
+	background: #444;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+
+
+.tabla{
+    background-color: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: auto;
+    max-width: 600px;
+    padding: 5px;
+    width: 100%;
+    animation: float 5s infinite;
+}
+
+th{
+    border-radius: 3px;
+    color: white;
+    background-color: black;
+    border-bottom: 4px solid brown;
+    border-right: 1px solid gray;
+    font-size: 23px;
+    font-weight: 100;
+    padding: 24px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+tr{
+
+    border-bottom: 1px solid black;
+    color: bla;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+tr:hover td{
+    background-color: grey;
+    color: white;
+    border-top: 1px solid black;
+}
+
+td{
+    text-align: center;
+    border-right: 1px solid gray;
+}
+
+
+
+
+
+
